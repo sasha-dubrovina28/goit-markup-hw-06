@@ -30,7 +30,7 @@ h1, h2, h3 {
 h1 {
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
+    line-height: 1.11;
 }
 
 h2 {
@@ -181,12 +181,17 @@ section {
     margin-top: auto;
 }
 
-.mobile-phone,
 .mobile-email {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: #434455;
+}
+.mobile-phone {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #4d5ae5;
 }
 
 .menu-social {
@@ -350,7 +355,7 @@ section {
 .hero-title {
     color: #FFFFFF;
     font-family: "Roboto";
-    max-width: 288px;
+    max-width: 216px;
     margin: 0 auto 72px;
     text-align: center;
 }
@@ -989,12 +994,6 @@ section {
         display: flex;
         gap: 40px;
     }
-    .features-title {
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 1.2;
-        text-align: left;
-    }
     .features-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1053,6 +1052,7 @@ section {
     .subscribe-form {
         flex-direction: row;
         align-items: center;
+        gap: 24px;
     }
     .subscribe-label,
     .subscribe-input {
@@ -1084,6 +1084,15 @@ section {
     .features-item {
         width: calc((100% - 72px) / 4);
     }
+    .features-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: left;
+    }
+    .features-item p {
+        font-weight: 400;
+    }
     .feature-icon-box {
         display: flex;
     }
@@ -1106,6 +1115,7 @@ section {
     .portfolio-item {
         box-shadow: none;
         width: calc((100% - 48px) / 3);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .portfolio-item:hover,
     .portfolio-item:focus-within {
@@ -1143,6 +1153,9 @@ section {
         align-items: stretch;
         gap: 64px 24px;
     }
+    .site-footer .container {
+        max-width: 584px;
+    }
 }
 @media (min-width: 768px) and (min-resolution: 192dpi),
 (min-width: 768px) and (min-resolution: 2dppx) {
@@ -1161,4 +1174,11 @@ section {
             url("../images/background@2.jpg");
     }
 }
-
+@media (max-width: 767px) and (min-resolution: 192dpi),
+(max-width: 767px) and (min-resolution: 2dppx) {
+    .hero-bg {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/background@2.jpg");
+    }
+}
