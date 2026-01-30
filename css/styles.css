@@ -710,7 +710,7 @@ section {
 
 .checkbox-text {
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.33;
     color: #8e8f99;
     letter-spacing: 0.04em;
 }
@@ -871,7 +871,7 @@ section {
 
 .footer-info {
     max-width: 264px;
-    text-align: center;
+    text-align: left;
 }
 
 .footer-text {
@@ -1011,6 +1011,9 @@ section {
     }
     .team-item {
         width: 264px;
+    }
+    .features-title {
+        text-align: left;
     }
     .portfolio-list {
         flex-direction: row;
