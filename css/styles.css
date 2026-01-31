@@ -857,7 +857,7 @@ section {
 .site-footer {
     background-color: #2E2F42;
     color: #f4f4fd;
-    padding: 100px 0;
+    padding: 96px 0;
     text-align: start;
     width: 100%;
 }
@@ -888,6 +888,8 @@ section {
 .footer-social .social-list {
     gap: 16px;
     margin-top: 0;
+    display: flex;
+    align-items: center;
 }
 
 .footer-social .social-icon {
@@ -1084,6 +1086,9 @@ section {
     .logo-header {
         margin-right: 76px;
     }
+    .hero-title {
+        margin-bottom: 48px;
+    }
     .features-item {
         width: calc((100% - 72px) / 4);
     }
@@ -1133,6 +1138,9 @@ section {
         justify-content: flex-start;
         gap: 120px;
     }
+    .site-footer {
+        padding: 100px 0;
+    }
     .subscribe {
         margin-left: auto;
     }
@@ -1158,6 +1166,16 @@ section {
     }
     .site-footer .container {
         max-width: 584px;
+    }
+    .footer-container {
+        justify-content: flex-start;
+    }
+    .footer-info,
+    .footer-social {
+        flex: 0 0 264px;
+    }
+    .subscribe {
+        flex-basis: 100%;
     }
 }
 @media (min-width: 768px) and (min-resolution: 192dpi),
