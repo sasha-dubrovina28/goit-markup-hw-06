@@ -564,7 +564,8 @@ section {
     background-color: rgba(46, 47, 66, 0.4);
     overflow-y: auto;
     opacity: 0;
-    padding: 72px 16px;
+    padding: 16px;
+    overflow-y: auto;
     visibility: hidden;
     pointer-events: none;
     z-index: 1100;
@@ -580,11 +581,13 @@ section {
 .modal {
     width: 100%;
     max-width: 288px;
-    margin: 0 auto;
+    margin: auto;
     background-color: #fcfcfc;
     border-radius: 4px;
     padding: 72px 16px 24px;
     position: relative;
+    max-height: calc(100vh - 32px);
+    overflow-y: auto;
 }
 
 .modal-title {
@@ -797,7 +800,7 @@ section {
     display: flex;
     gap: 16px;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 .subscribe-label {
     width: 100%;
@@ -850,7 +853,14 @@ section {
 .subscribe-input:focus {
     border-color: #31d0aa;
 }
-
+.subscribe-title,
+.footer-social-title {
+    text-align: left;
+}
+.subscribe-title,
+.footer-social-title {
+    text-align: left;
+}
 .subscribe-icon {
     fill: #ffffff;
 }
@@ -1034,6 +1044,7 @@ section {
     }
     .modal {
         width: 408px;
+        max-width: 408px;
         padding: 72px 24px 24px;    
     }
     .footer-container {
